@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-vite@latest . --template react-ts)",
+      "Bash(npx --yes create-vite@latest temp-project --template react-ts)",
+      "Bash(mv temp-project/* .)",
+      "Bash(mv temp-project/.* .)",
+      "Bash(rm -rf temp-project)",
+      "Bash(npm install:*)",
+      "Bash(rm -f src/App.css)",
+      "Bash(mkdir -p src/data src/components)",
+      "Bash(cd:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx vite:*)",
+      "Bash(brew install:*)",
+      "Bash(curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-darwin-amd64.tgz -o /tmp/cloudflared.tgz)",
+      "Bash(tar -xzf /tmp/cloudflared.tgz -C /tmp)",
+      "Bash(mv /tmp/cloudflared /usr/local/bin/cloudflared)",
+      "Bash(chmod +x /usr/local/bin/cloudflared)",
+      "Bash(npx localtunnel:*)",
+      "Bash(npx vercel:*)",
+      "Bash(npx surge:*)",
+      "Bash(gh auth:*)",
+      "Bash(ssh:*)",
+      "Bash(npm i:*)",
+      "Bash(vercel whoami:*)",
+      "Bash(vercel --prod)"
+    ]
+  }
+}
